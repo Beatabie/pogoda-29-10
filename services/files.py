@@ -30,8 +30,8 @@ def save_to_excel(dataset):
 def read_excel(file_path: str) -> pd.DataFrame:
 
     try:
-         df = pd.read_excel(file_path)
-                return df
+        df = pd.read_excel(file_path)
+        return df
     except Exception as e:
                 print(f"Wystąpił błąd podczas odczytu pliku: {e}")
                 return pd.DataFrame()
